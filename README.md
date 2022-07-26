@@ -4,6 +4,7 @@
 
 JDK랑 이클립스는 이미 설치가 되어있는 상태여서 넘어갔습니다.
 다만 스프링을 설치하는 과정에서
+
 Cannot complete the provisioning operation.  Please change your selection and try again. See below for details.
 
 Cannot complete the install because one or more required items could not be found.
@@ -51,5 +52,5 @@ Project 이름은 SpringTest인데 Package 이름은 settingweb이어서 둘다 
 똑같이 따라 했는데 3번 파일이 안 만들어져 막혔습니다.
 root-context.xml 파일 안에 내용을 다 삭제하고 하는건가요 아님 기존에 있는 코드는 유지하고 복붙을 하는건가요?
 아예 삭제하고 했는데 안됩니다(비밀번호 바꿨습니다.)
-주소가 적혀있는 부분이 있었는데 그 부분을 바꿔야 하는걸까요..?
+주소가 적혀있는 부분이 있었는데 그 부분을 바꿔야 하는걸까요..?\n
 기본 설정하는 과정이 조금 많이 복잡한것 같습니다..
