@@ -49,8 +49,21 @@ Project 이름은 SpringTest인데 Package 이름은 settingweb이어서 둘다 
 <스프링, MySQL, MYBastis 연동>
 이게 가장 문제였습니다.
 1번은 잘 따라갔는데 2번에서 막혔습니다
-똑같이 따라 했는데 3번 파일이 안 만들어져 막혔습니다.
-root-context.xml 파일 안에 내용을 다 삭제하고 하는건가요 아님 기존에 있는 코드는 유지하고 복붙을 하는건가요?
-아예 삭제하고 했는데 안됩니다(비밀번호 바꿨습니다.)
-주소가 적혀있는 부분이 있었는데 그 부분을 바꿔야 하는걸까요..?
-기본 설정하는 과정이 조금 많이 복잡한것 같습니다..
+
+xmlns가 문제라고 해서 검색해서
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:security="http://www.springframework.org/schema/security"
+    xmlns:tx="http://www.springframework.org/schema/tx"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
+        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd
+        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    
+이거로 변경했는데
+에러는 뜨지 않는데 3번 파일이 안 만들어져 막혔습니다.
