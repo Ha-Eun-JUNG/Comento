@@ -52,18 +52,5 @@ Project 이름은 SpringTest인데 Package 이름은 settingweb이어서 둘다 
 
 xmlns가 문제라고 해서 검색해서
 
-<beans xmlns="http://www.springframework.org/schema/beans"
-    xmlns:aop="http://www.springframework.org/schema/aop"
-    xmlns:context="http://www.springframework.org/schema/context"
-    xmlns:security="http://www.springframework.org/schema/security"
-    xmlns:tx="http://www.springframework.org/schema/tx"
-    xsi:schemaLocation="
-        http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-3.0.xsd
-        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
-        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-3.0.xsd
-        http://www.springframework.org/schema/security http://www.springframework.org/schema/security/spring-security-3.0.xsd
-        http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-3.0.xsd"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-    
-이거로 변경했는데
+변경했는데
 에러는 뜨지 않는데 3번 파일이 안 만들어져 막혔습니다.
