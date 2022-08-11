@@ -62,3 +62,21 @@ xmlns가 문제라고 해서 검색해서
 
 <API 가이드 문서 초안 만들기>
 아직 뭐하는 문서인지 이해가 안되서 공부를 더 해봐야 할것 같습니다.
+
+3주차
+
+확실히 Sping 보단 SpringBoot가 설정하기 편한것 같습니다. 다만 DAO와 DTO, Config등이 어떤 일을 하는 패키지들인지 이해하지 못해 찾아보았습니다.
+또한 mybastis를 연결한 이후엔 실행 자체가 되지 않아 혼란이 왔습니다.
+
+Description:
+Field uMapper in com.example.SpringTest.service.StatisticServiceImpl required a bean of type 'com.example.SpringTest.dao.StatisticMapper' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+Consider defining a bean of type 'com.example.SpringTest.dao.StatisticMapper' in your configuration.
+
+이런 에러가 나왔는데 모든 패키지와 java파일들이 있는데 왜 찾지 못하는지 이해하지 못했습니다.
+
